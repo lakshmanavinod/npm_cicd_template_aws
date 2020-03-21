@@ -1,0 +1,959 @@
+
+> FreddieMac@1.0.1 start /home/chatbot/botPackage/FM-Widget
+> webpack-dev-server --mode development --open
+
+module.js:549
+    throw err;
+    ^
+
+Error: Cannot find module 'dotenv-webpack'
+    at Function.Module._resolveFilename (module.js:547:15)
+    at Function.Module._load (module.js:474:25)
+    at Module.require (module.js:596:17)
+    at require (internal/module.js:11:18)
+    at Object.<anonymous> (/home/chatbot/botPackage/FM-Widget/webpack.config.js:1:78)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! FreddieMac@1.0.1 start: `webpack-dev-server --mode development --open`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the FreddieMac@1.0.1 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /home/chatbot/.npm/_logs/2019-04-02T16_22_17_573Z-debug.log
+
+> FreddieMac@1.0.1 start /home/chatbot/botPackage/FM-Widget
+> webpack-dev-server --mode development --open
+
+ℹ ｢wds｣: Project is running at [1m[34mhttp://localhost:8081/[39m[22m
+ℹ ｢wds｣: webpack output is served from [1m[34m/[39m[22m
+⚠ ｢wds｣: Unable to open browser. If you are running in a headless environment, please do not use the open flag.
+ℹ ｢wdm｣: Hash: [1m87113e0cbaefb6724ffd[39m[22m
+Version: webpack [1m4.29.6[39m[22m
+Time: [1m9836[39m[22mms
+Built at: 2019-04-02 [1m16:24:35[39m[22m
+                               [1mAsset[39m[22m      [1mSize[39m[22m  [1mChunks[39m[22m  [1m[39m[22m           [1m[39m[22m[1mChunk Names[39m[22m
+                        [1m[32m./index.html[39m[22m   2.4 KiB        [1m[39m[22m  [1m[32m[emitted][39m[22m  
+[1m[32m13c1ce580ab781619b82a344e5355867.png[39m[22m   271 KiB        [1m[39m[22m  [1m[32m[emitted][39m[22m  
+[1m[32maa2157ce9b7e3a5fde5eb433434d24fb.png[39m[22m   139 KiB        [1m[39m[22m  [1m[32m[emitted][39m[22m  
+[1m[32mc5ac0c2dcad11db7d08d625833914d13.png[39m[22m   265 KiB        [1m[39m[22m  [1m[32m[emitted][39m[22m  
+                             [1m[32mmain.js[39m[22m  2.71 MiB    [1mmain[39m[22m  [1m[32m[emitted][39m[22m  main
+Entrypoint [1mmain[39m[22m = [1m[32mmain.js[39m[22m
+[0] [1mmulti (webpack)-dev-server/client?http://localhost:8081 ./src[39m[22m 40 bytes {[1m[33mmain[39m[22m}[1m[32m [built][39m[22m
+[[1m./node_modules/jquery/dist/jquery.js[39m[22m] 265 KiB {[1m[33mmain[39m[22m}[1m[32m [built][39m[22m
+[[1m./node_modules/loglevel/lib/loglevel.js[39m[22m] 7.68 KiB {[1m[33mmain[39m[22m}[1m[32m [built][39m[22m
+[[1m./node_modules/react-dom/index.js[39m[22m] 1.33 KiB {[1m[33mmain[39m[22m}[1m[32m [built][39m[22m
+[[1m./node_modules/react-router-dom/es/index.js[39m[22m] 1010 bytes {[1m[33mmain[39m[22m}[1m[32m [built][39m[22m
+[[1m./node_modules/react/index.js[39m[22m] 190 bytes {[1m[33mmain[39m[22m}[1m[32m [built][39m[22m
+[[1m./node_modules/url/url.js[39m[22m] 22.8 KiB {[1m[33mmain[39m[22m}[1m[32m [built][39m[22m
+[./node_modules/webpack-dev-server/client/index.js?http://localhost:8081] [1m(webpack)-dev-server/client?http://localhost:8081[39m[22m 7.75 KiB {[1m[33mmain[39m[22m}[1m[32m [built][39m[22m
+[./node_modules/webpack-dev-server/client/overlay.js] [1m(webpack)-dev-server/client/overlay.js[39m[22m 3.58 KiB {[1m[33mmain[39m[22m}[1m[32m [built][39m[22m
+[./node_modules/webpack-dev-server/client/socket.js] [1m(webpack)-dev-server/client/socket.js[39m[22m 1.05 KiB {[1m[33mmain[39m[22m}[1m[32m [built][39m[22m
+[./node_modules/webpack-dev-server/node_modules/strip-ansi/index.js] [1m(webpack)-dev-server/node_modules/strip-ansi/index.js[39m[22m 161 bytes {[1m[33mmain[39m[22m}[1m[32m [built][39m[22m
+[./node_modules/webpack/hot sync ^\.\/log$] [1m(webpack)/hot sync nonrecursive ^\.\/log$[39m[22m 170 bytes {[1m[33mmain[39m[22m}[1m[32m [built][39m[22m
+[./node_modules/webpack/hot/emitter.js] [1m(webpack)/hot/emitter.js[39m[22m 75 bytes {[1m[33mmain[39m[22m}[1m[32m [built][39m[22m
+[[1m./src/App.js[39m[22m] 2.29 KiB {[1m[33mmain[39m[22m}[1m[32m [built][39m[22m
+[[1m./src/index.js[39m[22m] 5.29 KiB {[1m[33mmain[39m[22m}[1m[32m [built][39m[22m
+    + 411 hidden modules
+Child [1mhtml-webpack-plugin for "index.html"[39m[22m:
+     1 asset
+    Entrypoint [1mundefined[39m[22m = [1m[32m./index.html[39m[22m
+    [[1m./node_modules/html-webpack-plugin/lib/loader.js!./src/index.html[39m[22m] 2.79 KiB {[1m[33m0[39m[22m}[1m[32m [built][39m[22m
+    [[1m./node_modules/lodash/lodash.js[39m[22m] 527 KiB {[1m[33m0[39m[22m}[1m[32m [built][39m[22m
+    [./node_modules/webpack/buildin/global.js] [1m(webpack)/buildin/global.js[39m[22m 472 bytes {[1m[33m0[39m[22m}[1m[32m [built][39m[22m
+    [./node_modules/webpack/buildin/module.js] [1m(webpack)/buildin/module.js[39m[22m 497 bytes {[1m[33m0[39m[22m}[1m[32m [built][39m[22m
+ℹ ｢wdm｣: Compiled successfully.
+
+> FreddieMac@1.0.1 start /home/chatbot/botPackage/FM-Widget
+> webpack-dev-server --mode development --open
+
+ℹ ｢wds｣: Project is running at [1m[34mhttp://localhost:8081/[39m[22m
+ℹ ｢wds｣: webpack output is served from [1m[34m/[39m[22m
+⚠ ｢wds｣: Unable to open browser. If you are running in a headless environment, please do not use the open flag.
+ℹ ｢wdm｣: Hash: [1m87113e0cbaefb6724ffd[39m[22m
+Version: webpack [1m4.29.6[39m[22m
+Time: [1m12133[39m[22mms
+Built at: 2019-04-02 [1m16:31:00[39m[22m
+                               [1mAsset[39m[22m      [1mSize[39m[22m  [1mChunks[39m[22m  [1m[39m[22m           [1m[39m[22m[1mChunk Names[39m[22m
+                        [1m[32m./index.html[39m[22m   2.4 KiB        [1m[39m[22m  [1m[32m[emitted][39m[22m  
+[1m[32m13c1ce580ab781619b82a344e5355867.png[39m[22m   271 KiB        [1m[39m[22m  [1m[32m[emitted][39m[22m  
+[1m[32maa2157ce9b7e3a5fde5eb433434d24fb.png[39m[22m   139 KiB        [1m[39m[22m  [1m[32m[emitted][39m[22m  
+[1m[32mc5ac0c2dcad11db7d08d625833914d13.png[39m[22m   265 KiB        [1m[39m[22m  [1m[32m[emitted][39m[22m  
+                             [1m[32mmain.js[39m[22m  2.71 MiB    [1mmain[39m[22m  [1m[32m[emitted][39m[22m  main
+Entrypoint [1mmain[39m[22m = [1m[32mmain.js[39m[22m
+[0] [1mmulti (webpack)-dev-server/client?http://localhost:8081 ./src[39m[22m 40 bytes {[1m[33mmain[39m[22m}[1m[32m [built][39m[22m
+[[1m./node_modules/jquery/dist/jquery.js[39m[22m] 265 KiB {[1m[33mmain[39m[22m}[1m[32m [built][39m[22m
+[[1m./node_modules/loglevel/lib/loglevel.js[39m[22m] 7.68 KiB {[1m[33mmain[39m[22m}[1m[32m [built][39m[22m
+[[1m./node_modules/react-dom/index.js[39m[22m] 1.33 KiB {[1m[33mmain[39m[22m}[1m[32m [built][39m[22m
+[[1m./node_modules/react-router-dom/es/index.js[39m[22m] 1010 bytes {[1m[33mmain[39m[22m}[1m[32m [built][39m[22m
+[[1m./node_modules/react/index.js[39m[22m] 190 bytes {[1m[33mmain[39m[22m}[1m[32m [built][39m[22m
+[[1m./node_modules/url/url.js[39m[22m] 22.8 KiB {[1m[33mmain[39m[22m}[1m[32m [built][39m[22m
+[./node_modules/webpack-dev-server/client/index.js?http://localhost:8081] [1m(webpack)-dev-server/client?http://localhost:8081[39m[22m 7.75 KiB {[1m[33mmain[39m[22m}[1m[32m [built][39m[22m
+[./node_modules/webpack-dev-server/client/overlay.js] [1m(webpack)-dev-server/client/overlay.js[39m[22m 3.58 KiB {[1m[33mmain[39m[22m}[1m[32m [built][39m[22m
+[./node_modules/webpack-dev-server/client/socket.js] [1m(webpack)-dev-server/client/socket.js[39m[22m 1.05 KiB {[1m[33mmain[39m[22m}[1m[32m [built][39m[22m
+[./node_modules/webpack-dev-server/node_modules/strip-ansi/index.js] [1m(webpack)-dev-server/node_modules/strip-ansi/index.js[39m[22m 161 bytes {[1m[33mmain[39m[22m}[1m[32m [built][39m[22m
+[./node_modules/webpack/hot sync ^\.\/log$] [1m(webpack)/hot sync nonrecursive ^\.\/log$[39m[22m 170 bytes {[1m[33mmain[39m[22m}[1m[32m [built][39m[22m
+[./node_modules/webpack/hot/emitter.js] [1m(webpack)/hot/emitter.js[39m[22m 75 bytes {[1m[33mmain[39m[22m}[1m[32m [built][39m[22m
+[[1m./src/App.js[39m[22m] 2.29 KiB {[1m[33mmain[39m[22m}[1m[32m [built][39m[22m
+[[1m./src/index.js[39m[22m] 5.29 KiB {[1m[33mmain[39m[22m}[1m[32m [built][39m[22m
+    + 411 hidden modules
+Child [1mhtml-webpack-plugin for "index.html"[39m[22m:
+     1 asset
+    Entrypoint [1mundefined[39m[22m = [1m[32m./index.html[39m[22m
+    [[1m./node_modules/html-webpack-plugin/lib/loader.js!./src/index.html[39m[22m] 2.79 KiB {[1m[33m0[39m[22m}[1m[32m [built][39m[22m
+    [[1m./node_modules/lodash/lodash.js[39m[22m] 527 KiB {[1m[33m0[39m[22m}[1m[32m [built][39m[22m
+    [./node_modules/webpack/buildin/global.js] [1m(webpack)/buildin/global.js[39m[22m 472 bytes {[1m[33m0[39m[22m}[1m[32m [built][39m[22m
+    [./node_modules/webpack/buildin/module.js] [1m(webpack)/buildin/module.js[39m[22m 497 bytes {[1m[33m0[39m[22m}[1m[32m [built][39m[22m
+ℹ ｢wdm｣: Compiled successfully.
+
+> FreddieMac@1.0.1 start /home/chatbot/botPackage/FM-Widget
+> webpack --mode production && node server.js
+
+Hash: b2948f84eef254241b8d
+Version: webpack 4.29.6
+Time: 27527ms
+Built at: 2019-04-02 16:37:43
+                               Asset     Size  Chunks                    Chunk Names
+                        ./index.html  2.4 KiB          [emitted]         
+13c1ce580ab781619b82a344e5355867.png  271 KiB          [emitted]  [big]  
+aa2157ce9b7e3a5fde5eb433434d24fb.png  139 KiB          [emitted]         
+c5ac0c2dcad11db7d08d625833914d13.png  265 KiB          [emitted]  [big]  
+                             main.js  805 KiB       0  [emitted]  [big]  main
+Entrypoint main [big] = main.js
+  [4] ./src/Containers/ChatContainer/css/style.css 1.08 KiB {0} [built]
+ [54] ./src/Containers/ChatContainer/images/chat_bg.png 82 bytes {0} [built]
+ [55] ./src/Containers/ChatContainer/images/icon_cancel.png 2.15 KiB {0} [built]
+[107] ./node_modules/react-router-dom/es/index.js + 34 modules 80.3 KiB {0} [built]
+      |    35 modules
+[109] ./src/index.js 5.29 KiB {0} [built]
+[126] ./src/Containers/ChatContainer/images/Neo.png 82 bytes {0} [built]
+[127] ./src/App.js 2.29 KiB {0} [built]
+[128] ./src/Containers/ChatContainer/index.js 11.8 KiB {0} [built]
+[203] ./src/Containers/ChatContainer/css/grid.min.css 1.09 KiB {0} [built]
+[205] ./src/Containers/ChatContainer/OverlayScreen.js 4.09 KiB {0} [built]
+[209] ./src/Containers/ChatContainer/Header.js 3.39 KiB {0} [built]
+[212] ./src/Containers/ChatContainer/Footer.js 5.59 KiB {0} [built]
+[216] ./src/Containers/ChatContainer/Message.js 11.9 KiB {0} [built]
+[311] ./src/main.css 1.04 KiB {0} [built]
+[312] ./node_modules/css-loader!./src/main.css 1.04 KiB {0} [built]
+    + 300 hidden modules
+
+WARNING in asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
+This can impact web performance.
+Assets: 
+  13c1ce580ab781619b82a344e5355867.png (271 KiB)
+  c5ac0c2dcad11db7d08d625833914d13.png (265 KiB)
+  main.js (805 KiB)
+
+WARNING in entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.
+Entrypoints:
+  main (805 KiB)
+      main.js
+
+
+WARNING in webpack performance recommendations: 
+You can limit the size of your bundles by using import() or require.ensure to lazy load some parts of your application.
+For more info visit https://webpack.js.org/guides/code-splitting/
+Child html-webpack-plugin for "index.html":
+     1 asset
+    Entrypoint undefined = ./index.html
+    [0] ./node_modules/html-webpack-plugin/lib/loader.js!./src/index.html 2.79 KiB {0} [built]
+    [2] (webpack)/buildin/global.js 472 bytes {0} [built]
+    [3] (webpack)/buildin/module.js 497 bytes {0} [built]
+        + 1 hidden module
+server running at port 4000
+
+> FreddieMac@1.0.1 start /home/chatbot/botPackage/FM-Widget
+> webpack --mode production && node server.js
+
+Hash: b2948f84eef254241b8d
+Version: webpack 4.29.6
+Time: 10448ms
+Built at: 2019-04-02 16:38:04
+                               Asset     Size  Chunks                    Chunk Names
+                        ./index.html  2.4 KiB          [emitted]         
+13c1ce580ab781619b82a344e5355867.png  271 KiB          [emitted]  [big]  
+aa2157ce9b7e3a5fde5eb433434d24fb.png  139 KiB          [emitted]         
+c5ac0c2dcad11db7d08d625833914d13.png  265 KiB          [emitted]  [big]  
+                             main.js  805 KiB       0  [emitted]  [big]  main
+Entrypoint main [big] = main.js
+  [4] ./src/Containers/ChatContainer/css/style.css 1.08 KiB {0} [built]
+ [54] ./src/Containers/ChatContainer/images/chat_bg.png 82 bytes {0} [built]
+ [55] ./src/Containers/ChatContainer/images/icon_cancel.png 2.15 KiB {0} [built]
+[107] ./node_modules/react-router-dom/es/index.js + 34 modules 80.3 KiB {0} [built]
+      |    35 modules
+[109] ./src/index.js 5.29 KiB {0} [built]
+[126] ./src/Containers/ChatContainer/images/Neo.png 82 bytes {0} [built]
+[127] ./src/App.js 2.29 KiB {0} [built]
+[128] ./src/Containers/ChatContainer/index.js 11.8 KiB {0} [built]
+[203] ./src/Containers/ChatContainer/css/grid.min.css 1.09 KiB {0} [built]
+[205] ./src/Containers/ChatContainer/OverlayScreen.js 4.09 KiB {0} [built]
+[209] ./src/Containers/ChatContainer/Header.js 3.39 KiB {0} [built]
+[212] ./src/Containers/ChatContainer/Footer.js 5.59 KiB {0} [built]
+[216] ./src/Containers/ChatContainer/Message.js 11.9 KiB {0} [built]
+[311] ./src/main.css 1.04 KiB {0} [built]
+[312] ./node_modules/css-loader!./src/main.css 1.04 KiB {0} [built]
+    + 300 hidden modules
+
+WARNING in asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
+This can impact web performance.
+Assets: 
+  13c1ce580ab781619b82a344e5355867.png (271 KiB)
+  c5ac0c2dcad11db7d08d625833914d13.png (265 KiB)
+  main.js (805 KiB)
+
+WARNING in entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.
+Entrypoints:
+  main (805 KiB)
+      main.js
+
+
+WARNING in webpack performance recommendations: 
+You can limit the size of your bundles by using import() or require.ensure to lazy load some parts of your application.
+For more info visit https://webpack.js.org/guides/code-splitting/
+Child html-webpack-plugin for "index.html":
+     1 asset
+    Entrypoint undefined = ./index.html
+    [0] ./node_modules/html-webpack-plugin/lib/loader.js!./src/index.html 2.79 KiB {0} [built]
+    [2] (webpack)/buildin/global.js 472 bytes {0} [built]
+    [3] (webpack)/buildin/module.js 497 bytes {0} [built]
+        + 1 hidden module
+events.js:183
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE :::4000
+    at Object._errnoException (util.js:992:11)
+    at _exceptionWithHostPort (util.js:1014:20)
+    at Server.setupListenHandle [as _listen2] (net.js:1355:14)
+    at listenInCluster (net.js:1396:12)
+    at Server.listen (net.js:1480:7)
+    at Function.listen (/home/chatbot/botPackage/FM-Widget/node_modules/express/lib/application.js:618:24)
+    at Object.<anonymous> (/home/chatbot/botPackage/FM-Widget/server.js:83:5)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! FreddieMac@1.0.1 start: `webpack --mode production && node server.js`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the FreddieMac@1.0.1 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /home/chatbot/.npm/_logs/2019-04-02T16_38_05_407Z-debug.log
+Terminated
+npm ERR! code ELIFECYCLE
+npm ERR! errno 143
+npm ERR! FreddieMac@1.0.1 start: `webpack --mode production && node server.js`
+npm ERR! Exit status 143
+npm ERR! 
+npm ERR! Failed at the FreddieMac@1.0.1 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /home/chatbot/.npm/_logs/2019-04-02T17_03_27_063Z-debug.log
+
+> FreddieMac@1.0.1 start /home/chatbot/botPackage/FM-Widget
+> webpack --mode production && node server.js
+
+Hash: 6a962804f101b066257a
+Version: webpack 4.29.6
+Time: 28987ms
+Built at: 2019-04-02 17:04:10
+                               Asset     Size  Chunks                    Chunk Names
+                        ./index.html  2.4 KiB          [emitted]         
+13c1ce580ab781619b82a344e5355867.png  271 KiB          [emitted]  [big]  
+aa2157ce9b7e3a5fde5eb433434d24fb.png  139 KiB          [emitted]         
+c5ac0c2dcad11db7d08d625833914d13.png  265 KiB          [emitted]  [big]  
+                             main.js  805 KiB       0  [emitted]  [big]  main
+Entrypoint main [big] = main.js
+  [4] ./src/Containers/ChatContainer/css/style.css 1.08 KiB {0} [built]
+ [54] ./src/Containers/ChatContainer/images/chat_bg.png 82 bytes {0} [built]
+ [55] ./src/Containers/ChatContainer/images/icon_cancel.png 2.15 KiB {0} [built]
+[107] ./node_modules/react-router-dom/es/index.js + 34 modules 80.3 KiB {0} [built]
+      |    35 modules
+[109] ./src/index.js 5.3 KiB {0} [built]
+[126] ./src/Containers/ChatContainer/images/Neo.png 82 bytes {0} [built]
+[127] ./src/App.js 2.29 KiB {0} [built]
+[128] ./src/Containers/ChatContainer/index.js 11.8 KiB {0} [built]
+[203] ./src/Containers/ChatContainer/css/grid.min.css 1.09 KiB {0} [built]
+[205] ./src/Containers/ChatContainer/OverlayScreen.js 4.09 KiB {0} [built]
+[209] ./src/Containers/ChatContainer/Header.js 3.39 KiB {0} [built]
+[212] ./src/Containers/ChatContainer/Footer.js 5.59 KiB {0} [built]
+[216] ./src/Containers/ChatContainer/Message.js 11.9 KiB {0} [built]
+[311] ./src/main.css 1.04 KiB {0} [built]
+[312] ./node_modules/css-loader!./src/main.css 1.04 KiB {0} [built]
+    + 300 hidden modules
+
+WARNING in asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
+This can impact web performance.
+Assets: 
+  13c1ce580ab781619b82a344e5355867.png (271 KiB)
+  c5ac0c2dcad11db7d08d625833914d13.png (265 KiB)
+  main.js (805 KiB)
+
+WARNING in entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.
+Entrypoints:
+  main (805 KiB)
+      main.js
+
+
+WARNING in webpack performance recommendations: 
+You can limit the size of your bundles by using import() or require.ensure to lazy load some parts of your application.
+For more info visit https://webpack.js.org/guides/code-splitting/
+Child html-webpack-plugin for "index.html":
+     1 asset
+    Entrypoint undefined = ./index.html
+    [0] ./node_modules/html-webpack-plugin/lib/loader.js!./src/index.html 2.79 KiB {0} [built]
+    [2] (webpack)/buildin/global.js 472 bytes {0} [built]
+    [3] (webpack)/buildin/module.js 497 bytes {0} [built]
+        + 1 hidden module
+server running at port 4000
+Terminated
+npm ERR! code ELIFECYCLE
+npm ERR! errno 143
+npm ERR! FreddieMac@1.0.1 start: `webpack --mode production && node server.js`
+npm ERR! Exit status 143
+npm ERR! 
+npm ERR! Failed at the FreddieMac@1.0.1 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /home/chatbot/.npm/_logs/2019-04-02T17_52_21_874Z-debug.log
+
+> FreddieMac@1.0.1 start /home/chatbot/botPackage/FM-Widget
+> webpack --mode production && node server.js
+
+Hash: b2948f84eef254241b8d
+Version: webpack 4.29.6
+Time: 9268ms
+Built at: 2019-04-02 17:53:03
+                               Asset     Size  Chunks                    Chunk Names
+                        ./index.html  2.4 KiB          [emitted]         
+13c1ce580ab781619b82a344e5355867.png  271 KiB          [emitted]  [big]  
+aa2157ce9b7e3a5fde5eb433434d24fb.png  139 KiB          [emitted]         
+c5ac0c2dcad11db7d08d625833914d13.png  265 KiB          [emitted]  [big]  
+                             main.js  805 KiB       0  [emitted]  [big]  main
+Entrypoint main [big] = main.js
+  [4] ./src/Containers/ChatContainer/css/style.css 1.08 KiB {0} [built]
+ [54] ./src/Containers/ChatContainer/images/chat_bg.png 82 bytes {0} [built]
+ [55] ./src/Containers/ChatContainer/images/icon_cancel.png 2.15 KiB {0} [built]
+[107] ./node_modules/react-router-dom/es/index.js + 34 modules 80.3 KiB {0} [built]
+      |    35 modules
+[109] ./src/index.js 5.29 KiB {0} [built]
+[126] ./src/Containers/ChatContainer/images/Neo.png 82 bytes {0} [built]
+[127] ./src/App.js 2.29 KiB {0} [built]
+[128] ./src/Containers/ChatContainer/index.js 11.8 KiB {0} [built]
+[203] ./src/Containers/ChatContainer/css/grid.min.css 1.09 KiB {0} [built]
+[205] ./src/Containers/ChatContainer/OverlayScreen.js 4.09 KiB {0} [built]
+[209] ./src/Containers/ChatContainer/Header.js 3.39 KiB {0} [built]
+[212] ./src/Containers/ChatContainer/Footer.js 5.59 KiB {0} [built]
+[216] ./src/Containers/ChatContainer/Message.js 11.9 KiB {0} [built]
+[311] ./src/main.css 1.04 KiB {0} [built]
+[312] ./node_modules/css-loader!./src/main.css 1.04 KiB {0} [built]
+    + 300 hidden modules
+
+WARNING in asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
+This can impact web performance.
+Assets: 
+  13c1ce580ab781619b82a344e5355867.png (271 KiB)
+  c5ac0c2dcad11db7d08d625833914d13.png (265 KiB)
+  main.js (805 KiB)
+
+WARNING in entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.
+Entrypoints:
+  main (805 KiB)
+      main.js
+
+
+WARNING in webpack performance recommendations: 
+You can limit the size of your bundles by using import() or require.ensure to lazy load some parts of your application.
+For more info visit https://webpack.js.org/guides/code-splitting/
+Child html-webpack-plugin for "index.html":
+     1 asset
+    Entrypoint undefined = ./index.html
+    [0] ./node_modules/html-webpack-plugin/lib/loader.js!./src/index.html 2.79 KiB {0} [built]
+    [2] (webpack)/buildin/global.js 472 bytes {0} [built]
+    [3] (webpack)/buildin/module.js 497 bytes {0} [built]
+        + 1 hidden module
+server running at port 4000
+
+> FreddieMac@1.0.1 start /home/chatbot/botPackage/FM-Widget
+> webpack --mode production && node server.js
+
+Hash: b2948f84eef254241b8d
+Version: webpack 4.29.6
+Time: 13522ms
+Built at: 2019-04-03 06:33:37
+                               Asset     Size  Chunks                    Chunk Names
+                        ./index.html  2.4 KiB          [emitted]         
+13c1ce580ab781619b82a344e5355867.png  271 KiB          [emitted]  [big]  
+aa2157ce9b7e3a5fde5eb433434d24fb.png  139 KiB          [emitted]         
+c5ac0c2dcad11db7d08d625833914d13.png  265 KiB          [emitted]  [big]  
+                             main.js  805 KiB       0  [emitted]  [big]  main
+Entrypoint main [big] = main.js
+  [4] ./src/Containers/ChatContainer/css/style.css 1.08 KiB {0} [built]
+ [54] ./src/Containers/ChatContainer/images/chat_bg.png 82 bytes {0} [built]
+ [55] ./src/Containers/ChatContainer/images/icon_cancel.png 2.15 KiB {0} [built]
+[107] ./node_modules/react-router-dom/es/index.js + 34 modules 80.3 KiB {0} [built]
+      |    35 modules
+[109] ./src/index.js 5.29 KiB {0} [built]
+[126] ./src/Containers/ChatContainer/images/Neo.png 82 bytes {0} [built]
+[127] ./src/App.js 2.29 KiB {0} [built]
+[128] ./src/Containers/ChatContainer/index.js 11.8 KiB {0} [built]
+[203] ./src/Containers/ChatContainer/css/grid.min.css 1.09 KiB {0} [built]
+[205] ./src/Containers/ChatContainer/OverlayScreen.js 4.09 KiB {0} [built]
+[209] ./src/Containers/ChatContainer/Header.js 3.39 KiB {0} [built]
+[212] ./src/Containers/ChatContainer/Footer.js 5.59 KiB {0} [built]
+[216] ./src/Containers/ChatContainer/Message.js 11.9 KiB {0} [built]
+[311] ./src/main.css 1.04 KiB {0} [built]
+[312] ./node_modules/css-loader!./src/main.css 1.04 KiB {0} [built]
+    + 300 hidden modules
+
+WARNING in asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
+This can impact web performance.
+Assets: 
+  13c1ce580ab781619b82a344e5355867.png (271 KiB)
+  c5ac0c2dcad11db7d08d625833914d13.png (265 KiB)
+  main.js (805 KiB)
+
+WARNING in entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.
+Entrypoints:
+  main (805 KiB)
+      main.js
+
+
+WARNING in webpack performance recommendations: 
+You can limit the size of your bundles by using import() or require.ensure to lazy load some parts of your application.
+For more info visit https://webpack.js.org/guides/code-splitting/
+Child html-webpack-plugin for "index.html":
+     1 asset
+    Entrypoint undefined = ./index.html
+    [0] ./node_modules/html-webpack-plugin/lib/loader.js!./src/index.html 2.79 KiB {0} [built]
+    [2] (webpack)/buildin/global.js 472 bytes {0} [built]
+    [3] (webpack)/buildin/module.js 497 bytes {0} [built]
+        + 1 hidden module
+server running at port 4000
+
+> FreddieMac@1.0.1 start /home/chatbot/botPackage/FM-Widget
+> webpack --mode production && node server.js
+
+
+> FreddieMac@1.0.1 start /home/chatbot/botPackage/FM-Widget
+> webpack --mode production && node server.js
+
+Hash: b2948f84eef254241b8d
+Version: webpack 4.29.6
+Time: 11873ms
+Built at: 2019-04-03 06:46:01
+                               Asset     Size  Chunks                    Chunk Names
+                        ./index.html  2.4 KiB          [emitted]         
+13c1ce580ab781619b82a344e5355867.png  271 KiB          [emitted]  [big]  
+aa2157ce9b7e3a5fde5eb433434d24fb.png  139 KiB          [emitted]         
+c5ac0c2dcad11db7d08d625833914d13.png  265 KiB          [emitted]  [big]  
+                             main.js  805 KiB       0  [emitted]  [big]  main
+Entrypoint main [big] = main.js
+  [4] ./src/Containers/ChatContainer/css/style.css 1.08 KiB {0} [built]
+ [54] ./src/Containers/ChatContainer/images/chat_bg.png 82 bytes {0} [built]
+ [55] ./src/Containers/ChatContainer/images/icon_cancel.png 2.15 KiB {0} [built]
+[107] ./node_modules/react-router-dom/es/index.js + 34 modules 80.3 KiB {0} [built]
+      |    35 modules
+[109] ./src/index.js 5.29 KiB {0} [built]
+[126] ./src/Containers/ChatContainer/images/Neo.png 82 bytes {0} [built]
+[127] ./src/App.js 2.29 KiB {0} [built]
+[128] ./src/Containers/ChatContainer/index.js 11.8 KiB {0} [built]
+[203] ./src/Containers/ChatContainer/css/grid.min.css 1.09 KiB {0} [built]
+[205] ./src/Containers/ChatContainer/OverlayScreen.js 4.09 KiB {0} [built]
+[209] ./src/Containers/ChatContainer/Header.js 3.39 KiB {0} [built]
+[212] ./src/Containers/ChatContainer/Footer.js 5.59 KiB {0} [built]
+[216] ./src/Containers/ChatContainer/Message.js 11.9 KiB {0} [built]
+[311] ./src/main.css 1.04 KiB {0} [built]
+[312] ./node_modules/css-loader!./src/main.css 1.04 KiB {0} [built]
+    + 300 hidden modules
+
+WARNING in asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
+This can impact web performance.
+Assets: 
+  13c1ce580ab781619b82a344e5355867.png (271 KiB)
+  c5ac0c2dcad11db7d08d625833914d13.png (265 KiB)
+  main.js (805 KiB)
+
+WARNING in entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.
+Entrypoints:
+  main (805 KiB)
+      main.js
+
+
+WARNING in webpack performance recommendations: 
+You can limit the size of your bundles by using import() or require.ensure to lazy load some parts of your application.
+For more info visit https://webpack.js.org/guides/code-splitting/
+Child html-webpack-plugin for "index.html":
+     1 asset
+    Entrypoint undefined = ./index.html
+    [0] ./node_modules/html-webpack-plugin/lib/loader.js!./src/index.html 2.79 KiB {0} [built]
+    [2] (webpack)/buildin/global.js 472 bytes {0} [built]
+    [3] (webpack)/buildin/module.js 497 bytes {0} [built]
+        + 1 hidden module
+events.js:183
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE :::4000
+    at Object._errnoException (util.js:992:11)
+    at _exceptionWithHostPort (util.js:1014:20)
+    at Server.setupListenHandle [as _listen2] (net.js:1355:14)
+    at listenInCluster (net.js:1396:12)
+    at Server.listen (net.js:1480:7)
+    at Function.listen (/home/chatbot/botPackage/FM-Widget/node_modules/express/lib/application.js:618:24)
+    at Object.<anonymous> (/home/chatbot/botPackage/FM-Widget/server.js:83:5)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! FreddieMac@1.0.1 start: `webpack --mode production && node server.js`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the FreddieMac@1.0.1 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /home/chatbot/.npm/_logs/2019-04-03T06_46_02_083Z-debug.log
+
+> FreddieMac@1.0.1 start /home/chatbot/botPackage/FM-Widget
+> webpack --mode production && node server.js
+
+Hash: b2948f84eef254241b8d
+Version: webpack 4.29.6
+Time: 7628ms
+Built at: 2019-04-03 07:03:42
+                               Asset     Size  Chunks                    Chunk Names
+                        ./index.html  2.4 KiB          [emitted]         
+13c1ce580ab781619b82a344e5355867.png  271 KiB          [emitted]  [big]  
+aa2157ce9b7e3a5fde5eb433434d24fb.png  139 KiB          [emitted]         
+c5ac0c2dcad11db7d08d625833914d13.png  265 KiB          [emitted]  [big]  
+                             main.js  805 KiB       0  [emitted]  [big]  main
+Entrypoint main [big] = main.js
+  [4] ./src/Containers/ChatContainer/css/style.css 1.08 KiB {0} [built]
+ [54] ./src/Containers/ChatContainer/images/chat_bg.png 82 bytes {0} [built]
+ [55] ./src/Containers/ChatContainer/images/icon_cancel.png 2.15 KiB {0} [built]
+[107] ./node_modules/react-router-dom/es/index.js + 34 modules 80.3 KiB {0} [built]
+      |    35 modules
+[109] ./src/index.js 5.29 KiB {0} [built]
+[126] ./src/Containers/ChatContainer/images/Neo.png 82 bytes {0} [built]
+[127] ./src/App.js 2.29 KiB {0} [built]
+[128] ./src/Containers/ChatContainer/index.js 11.8 KiB {0} [built]
+[203] ./src/Containers/ChatContainer/css/grid.min.css 1.09 KiB {0} [built]
+[205] ./src/Containers/ChatContainer/OverlayScreen.js 4.09 KiB {0} [built]
+[209] ./src/Containers/ChatContainer/Header.js 3.39 KiB {0} [built]
+[212] ./src/Containers/ChatContainer/Footer.js 5.59 KiB {0} [built]
+[216] ./src/Containers/ChatContainer/Message.js 11.9 KiB {0} [built]
+[311] ./src/main.css 1.04 KiB {0} [built]
+[312] ./node_modules/css-loader!./src/main.css 1.04 KiB {0} [built]
+    + 300 hidden modules
+
+WARNING in asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
+This can impact web performance.
+Assets: 
+  13c1ce580ab781619b82a344e5355867.png (271 KiB)
+  c5ac0c2dcad11db7d08d625833914d13.png (265 KiB)
+  main.js (805 KiB)
+
+WARNING in entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.
+Entrypoints:
+  main (805 KiB)
+      main.js
+
+
+WARNING in webpack performance recommendations: 
+You can limit the size of your bundles by using import() or require.ensure to lazy load some parts of your application.
+For more info visit https://webpack.js.org/guides/code-splitting/
+Child html-webpack-plugin for "index.html":
+     1 asset
+    Entrypoint undefined = ./index.html
+    [0] ./node_modules/html-webpack-plugin/lib/loader.js!./src/index.html 2.79 KiB {0} [built]
+    [2] (webpack)/buildin/global.js 472 bytes {0} [built]
+    [3] (webpack)/buildin/module.js 497 bytes {0} [built]
+        + 1 hidden module
+events.js:183
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE :::4000
+    at Object._errnoException (util.js:992:11)
+    at _exceptionWithHostPort (util.js:1014:20)
+    at Server.setupListenHandle [as _listen2] (net.js:1355:14)
+    at listenInCluster (net.js:1396:12)
+    at Server.listen (net.js:1480:7)
+    at Function.listen (/home/chatbot/botPackage/FM-Widget/node_modules/express/lib/application.js:618:24)
+    at Object.<anonymous> (/home/chatbot/botPackage/FM-Widget/server.js:83:5)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! FreddieMac@1.0.1 start: `webpack --mode production && node server.js`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the FreddieMac@1.0.1 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /home/chatbot/.npm/_logs/2019-04-03T07_03_43_284Z-debug.log
+Terminated
+npm ERR! code ELIFECYCLE
+npm ERR! errno 143
+npm ERR! FreddieMac@1.0.1 start: `webpack --mode production && node server.js`
+npm ERR! Exit status 143
+npm ERR! 
+npm ERR! Failed at the FreddieMac@1.0.1 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /home/chatbot/.npm/_logs/2019-04-03T07_14_13_162Z-debug.log
+
+> FreddieMac@1.0.1 start /home/chatbot/botPackage/FM-Widget
+> webpack --mode production && node server.js
+
+Hash: 39a8ab3d89ddd3aceb45
+Version: webpack 4.29.6
+Time: 42266ms
+Built at: 2019-04-03 07:15:16
+                               Asset     Size  Chunks                    Chunk Names
+                        ./index.html  2.4 KiB          [emitted]         
+13c1ce580ab781619b82a344e5355867.png  271 KiB          [emitted]  [big]  
+aa2157ce9b7e3a5fde5eb433434d24fb.png  139 KiB          [emitted]         
+c5ac0c2dcad11db7d08d625833914d13.png  265 KiB          [emitted]  [big]  
+                             main.js  805 KiB       0  [emitted]  [big]  main
+Entrypoint main [big] = main.js
+  [4] ./src/Containers/ChatContainer/css/style.css 1.08 KiB {0} [built]
+ [54] ./src/Containers/ChatContainer/images/chat_bg.png 82 bytes {0} [built]
+ [55] ./src/Containers/ChatContainer/images/icon_cancel.png 2.15 KiB {0} [built]
+[107] ./node_modules/react-router-dom/es/index.js + 34 modules 80.3 KiB {0} [built]
+      |    35 modules
+[109] ./src/index.js 5.29 KiB {0} [built]
+[126] ./src/Containers/ChatContainer/images/Neo.png 82 bytes {0} [built]
+[127] ./src/App.js 2.29 KiB {0} [built]
+[128] ./src/Containers/ChatContainer/index.js 11.8 KiB {0} [built]
+[203] ./src/Containers/ChatContainer/css/grid.min.css 1.09 KiB {0} [built]
+[205] ./src/Containers/ChatContainer/OverlayScreen.js 4.09 KiB {0} [built]
+[209] ./src/Containers/ChatContainer/Header.js 3.4 KiB {0} [built]
+[212] ./src/Containers/ChatContainer/Footer.js 5.59 KiB {0} [built]
+[216] ./src/Containers/ChatContainer/Message.js 11.9 KiB {0} [built]
+[311] ./src/main.css 1.04 KiB {0} [built]
+[312] ./node_modules/css-loader!./src/main.css 1.04 KiB {0} [built]
+    + 300 hidden modules
+
+WARNING in asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
+This can impact web performance.
+Assets: 
+  13c1ce580ab781619b82a344e5355867.png (271 KiB)
+  c5ac0c2dcad11db7d08d625833914d13.png (265 KiB)
+  main.js (805 KiB)
+
+WARNING in entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.
+Entrypoints:
+  main (805 KiB)
+      main.js
+
+
+WARNING in webpack performance recommendations: 
+You can limit the size of your bundles by using import() or require.ensure to lazy load some parts of your application.
+For more info visit https://webpack.js.org/guides/code-splitting/
+Child html-webpack-plugin for "index.html":
+     1 asset
+    Entrypoint undefined = ./index.html
+    [0] ./node_modules/html-webpack-plugin/lib/loader.js!./src/index.html 2.79 KiB {0} [built]
+    [2] (webpack)/buildin/global.js 472 bytes {0} [built]
+    [3] (webpack)/buildin/module.js 497 bytes {0} [built]
+        + 1 hidden module
+server running at port 4000
+Terminated
+npm ERR! code ELIFECYCLE
+npm ERR! errno 143
+npm ERR! FreddieMac@1.0.1 start: `webpack --mode production && node server.js`
+npm ERR! Exit status 143
+npm ERR! 
+npm ERR! Failed at the FreddieMac@1.0.1 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /home/chatbot/.npm/_logs/2019-04-03T07_44_43_692Z-debug.log
+
+> FreddieMac@1.0.1 start /home/chatbot/botPackage/FM-Widget
+> webpack --mode production && node server.js
+
+Hash: cb57e2ad58ab4207bbdc
+Version: webpack 4.29.6
+Time: 42088ms
+Built at: 2019-04-03 07:45:50
+                               Asset     Size  Chunks                    Chunk Names
+                        ./index.html  2.4 KiB          [emitted]         
+13c1ce580ab781619b82a344e5355867.png  271 KiB          [emitted]  [big]  
+c5ac0c2dcad11db7d08d625833914d13.png  265 KiB          [emitted]  [big]  
+                             main.js  780 KiB       0  [emitted]  [big]  main
+Entrypoint main [big] = main.js
+  [4] ./src/Containers/ChatContainer/css/style.css 1.08 KiB {0} [built]
+ [54] ./src/Containers/ChatContainer/images/chat_bg.png 82 bytes {0} [built]
+ [55] ./src/Containers/ChatContainer/images/icon_cancel.png 2.15 KiB {0} [built]
+[107] ./node_modules/react-router-dom/es/index.js + 34 modules 80.3 KiB {0} [built]
+      |    35 modules
+[109] ./src/index.js 5.29 KiB {0} [built]
+[126] ./src/Containers/ChatContainer/images/Neo.png 82 bytes {0} [built]
+[127] ./src/App.js 2.29 KiB {0} [built]
+[128] ./src/Containers/ChatContainer/index.js 11.8 KiB {0} [built]
+[203] ./src/Containers/ChatContainer/css/grid.min.css 1.09 KiB {0} [built]
+[205] ./src/Containers/ChatContainer/OverlayScreen.js 4.09 KiB {0} [built]
+[209] ./src/Containers/ChatContainer/Header.js 3.05 KiB {0} [built]
+[210] ./src/Containers/ChatContainer/Footer.js 5.59 KiB {0} [built]
+[214] ./src/Containers/ChatContainer/Message.js 11.9 KiB {0} [built]
+[309] ./src/main.css 1.04 KiB {0} [built]
+[310] ./node_modules/css-loader!./src/main.css 1.04 KiB {0} [built]
+    + 298 hidden modules
+
+WARNING in asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
+This can impact web performance.
+Assets: 
+  13c1ce580ab781619b82a344e5355867.png (271 KiB)
+  c5ac0c2dcad11db7d08d625833914d13.png (265 KiB)
+  main.js (780 KiB)
+
+WARNING in entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.
+Entrypoints:
+  main (780 KiB)
+      main.js
+
+
+WARNING in webpack performance recommendations: 
+You can limit the size of your bundles by using import() or require.ensure to lazy load some parts of your application.
+For more info visit https://webpack.js.org/guides/code-splitting/
+Child html-webpack-plugin for "index.html":
+     1 asset
+    Entrypoint undefined = ./index.html
+    [0] ./node_modules/html-webpack-plugin/lib/loader.js!./src/index.html 2.79 KiB {0} [built]
+    [2] (webpack)/buildin/global.js 472 bytes {0} [built]
+    [3] (webpack)/buildin/module.js 497 bytes {0} [built]
+        + 1 hidden module
+server running at port 4000
+Terminated
+npm ERR! code ELIFECYCLE
+npm ERR! errno 143
+npm ERR! FreddieMac@1.0.1 start: `webpack --mode production && node server.js`
+npm ERR! Exit status 143
+npm ERR! 
+npm ERR! Failed at the FreddieMac@1.0.1 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /home/chatbot/.npm/_logs/2019-04-03T07_59_51_665Z-debug.log
+
+> FreddieMac@1.0.1 start /home/chatbot/botPackage/FM-Widget
+> webpack --mode production && node server.js
+
+Hash: e3a22aa2bbf67e3d38ac
+Version: webpack 4.29.6
+Time: 41314ms
+Built at: 2019-04-03 08:00:57
+                               Asset     Size  Chunks                    Chunk Names
+                        ./index.html  2.4 KiB          [emitted]         
+13c1ce580ab781619b82a344e5355867.png  271 KiB          [emitted]  [big]  
+c5ac0c2dcad11db7d08d625833914d13.png  265 KiB          [emitted]  [big]  
+                             main.js  805 KiB       0  [emitted]  [big]  main
+Entrypoint main [big] = main.js
+  [4] ./src/Containers/ChatContainer/css/style.css 1.08 KiB {0} [built]
+ [54] ./src/Containers/ChatContainer/images/chat_bg.png 82 bytes {0} [built]
+ [55] ./src/Containers/ChatContainer/images/icon_cancel.png 2.15 KiB {0} [built]
+[107] ./node_modules/react-router-dom/es/index.js + 34 modules 80.3 KiB {0} [built]
+      |    35 modules
+[109] ./src/index.js 5.29 KiB {0} [built]
+[126] ./src/Containers/ChatContainer/images/Neo.png 82 bytes {0} [built]
+[127] ./src/App.js 2.29 KiB {0} [built]
+[128] ./src/Containers/ChatContainer/index.js 11.8 KiB {0} [built]
+[203] ./src/Containers/ChatContainer/css/grid.min.css 1.09 KiB {0} [built]
+[205] ./src/Containers/ChatContainer/OverlayScreen.js 4.09 KiB {0} [built]
+[209] ./src/Containers/ChatContainer/Header.js 3.39 KiB {0} [built]
+[211] ./src/Containers/ChatContainer/Footer.js 5.59 KiB {0} [built]
+[215] ./src/Containers/ChatContainer/Message.js 11.9 KiB {0} [built]
+[310] ./src/main.css 1.04 KiB {0} [built]
+[311] ./node_modules/css-loader!./src/main.css 1.04 KiB {0} [built]
+    + 299 hidden modules
+
+WARNING in asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
+This can impact web performance.
+Assets: 
+  13c1ce580ab781619b82a344e5355867.png (271 KiB)
+  c5ac0c2dcad11db7d08d625833914d13.png (265 KiB)
+  main.js (805 KiB)
+
+WARNING in entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.
+Entrypoints:
+  main (805 KiB)
+      main.js
+
+
+WARNING in webpack performance recommendations: 
+You can limit the size of your bundles by using import() or require.ensure to lazy load some parts of your application.
+For more info visit https://webpack.js.org/guides/code-splitting/
+Child html-webpack-plugin for "index.html":
+     1 asset
+    Entrypoint undefined = ./index.html
+    [0] ./node_modules/html-webpack-plugin/lib/loader.js!./src/index.html 2.79 KiB {0} [built]
+    [2] (webpack)/buildin/global.js 472 bytes {0} [built]
+    [3] (webpack)/buildin/module.js 497 bytes {0} [built]
+        + 1 hidden module
+server running at port 4000
+Terminated
+npm ERR! code ELIFECYCLE
+npm ERR! errno 143
+npm ERR! FreddieMac@1.0.1 start: `webpack --mode production && node server.js`
+npm ERR! Exit status 143
+npm ERR! 
+npm ERR! Failed at the FreddieMac@1.0.1 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /home/chatbot/.npm/_logs/2019-04-03T08_08_28_655Z-debug.log
+
+> FreddieMac@1.0.1 start /home/chatbot/botPackage/FM-Widget
+> webpack --mode production && node server.js
+
+Hash: 2ced2d7ebd61bc48404f
+Version: webpack 4.29.6
+Time: 41075ms
+Built at: 2019-04-03 08:09:39
+                               Asset     Size  Chunks                    Chunk Names
+                        ./index.html  2.4 KiB          [emitted]         
+13c1ce580ab781619b82a344e5355867.png  271 KiB          [emitted]  [big]  
+c5ac0c2dcad11db7d08d625833914d13.png  265 KiB          [emitted]  [big]  
+                             main.js  805 KiB       0  [emitted]  [big]  main
+Entrypoint main [big] = main.js
+  [4] ./src/Containers/ChatContainer/css/style.css 1.08 KiB {0} [built]
+ [54] ./src/Containers/ChatContainer/images/chat_bg.png 82 bytes {0} [built]
+ [55] ./src/Containers/ChatContainer/images/icon_cancel.png 2.15 KiB {0} [built]
+[107] ./node_modules/react-router-dom/es/index.js + 34 modules 80.3 KiB {0} [built]
+      |    35 modules
+[109] ./src/index.js 5.29 KiB {0} [built]
+[126] ./src/Containers/ChatContainer/images/Neo.png 82 bytes {0} [built]
+[127] ./src/App.js 2.29 KiB {0} [built]
+[128] ./src/Containers/ChatContainer/index.js 11.8 KiB {0} [built]
+[203] ./src/Containers/ChatContainer/css/grid.min.css 1.09 KiB {0} [built]
+[205] ./src/Containers/ChatContainer/OverlayScreen.js 4.09 KiB {0} [built]
+[209] ./src/Containers/ChatContainer/Header.js 3.39 KiB {0} [built]
+[211] ./src/Containers/ChatContainer/Footer.js 5.59 KiB {0} [built]
+[215] ./src/Containers/ChatContainer/Message.js 11.9 KiB {0} [built]
+[310] ./src/main.css 1.04 KiB {0} [built]
+[311] ./node_modules/css-loader!./src/main.css 1.04 KiB {0} [built]
+    + 299 hidden modules
+
+WARNING in asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
+This can impact web performance.
+Assets: 
+  13c1ce580ab781619b82a344e5355867.png (271 KiB)
+  c5ac0c2dcad11db7d08d625833914d13.png (265 KiB)
+  main.js (805 KiB)
+
+WARNING in entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.
+Entrypoints:
+  main (805 KiB)
+      main.js
+
+
+WARNING in webpack performance recommendations: 
+You can limit the size of your bundles by using import() or require.ensure to lazy load some parts of your application.
+For more info visit https://webpack.js.org/guides/code-splitting/
+Child html-webpack-plugin for "index.html":
+     1 asset
+    Entrypoint undefined = ./index.html
+    [0] ./node_modules/html-webpack-plugin/lib/loader.js!./src/index.html 2.79 KiB {0} [built]
+    [2] (webpack)/buildin/global.js 472 bytes {0} [built]
+    [3] (webpack)/buildin/module.js 497 bytes {0} [built]
+        + 1 hidden module
+server running at port 4000
+
+> FreddieMac@1.0.1 start /home/chatbot/botPackage/FM-Widget
+> webpack --mode production && node server.js
+
+Hash: 2ced2d7ebd61bc48404f
+Version: webpack 4.29.6
+Time: 16503ms
+Built at: 2019-04-03 10:34:46
+                               Asset     Size  Chunks                    Chunk Names
+                        ./index.html  2.4 KiB          [emitted]         
+13c1ce580ab781619b82a344e5355867.png  271 KiB          [emitted]  [big]  
+c5ac0c2dcad11db7d08d625833914d13.png  265 KiB          [emitted]  [big]  
+                             main.js  805 KiB       0  [emitted]  [big]  main
+Entrypoint main [big] = main.js
+  [4] ./src/Containers/ChatContainer/css/style.css 1.08 KiB {0} [built]
+ [54] ./src/Containers/ChatContainer/images/chat_bg.png 82 bytes {0} [built]
+ [55] ./src/Containers/ChatContainer/images/icon_cancel.png 2.15 KiB {0} [built]
+[107] ./node_modules/react-router-dom/es/index.js + 34 modules 80.3 KiB {0} [built]
+      |    35 modules
+[109] ./src/index.js 5.29 KiB {0} [built]
+[126] ./src/Containers/ChatContainer/images/Neo.png 82 bytes {0} [built]
+[127] ./src/App.js 2.29 KiB {0} [built]
+[128] ./src/Containers/ChatContainer/index.js 11.8 KiB {0} [built]
+[203] ./src/Containers/ChatContainer/css/grid.min.css 1.09 KiB {0} [built]
+[205] ./src/Containers/ChatContainer/OverlayScreen.js 4.09 KiB {0} [built]
+[209] ./src/Containers/ChatContainer/Header.js 3.39 KiB {0} [built]
+[211] ./src/Containers/ChatContainer/Footer.js 5.59 KiB {0} [built]
+[215] ./src/Containers/ChatContainer/Message.js 11.9 KiB {0} [built]
+[310] ./src/main.css 1.04 KiB {0} [built]
+[311] ./node_modules/css-loader!./src/main.css 1.04 KiB {0} [built]
+    + 299 hidden modules
+
+WARNING in asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
+This can impact web performance.
+Assets: 
+  13c1ce580ab781619b82a344e5355867.png (271 KiB)
+  c5ac0c2dcad11db7d08d625833914d13.png (265 KiB)
+  main.js (805 KiB)
+
+WARNING in entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.
+Entrypoints:
+  main (805 KiB)
+      main.js
+
+
+WARNING in webpack performance recommendations: 
+You can limit the size of your bundles by using import() or require.ensure to lazy load some parts of your application.
+For more info visit https://webpack.js.org/guides/code-splitting/
+Child html-webpack-plugin for "index.html":
+     1 asset
+    Entrypoint undefined = ./index.html
+    [0] ./node_modules/html-webpack-plugin/lib/loader.js!./src/index.html 2.79 KiB {0} [built]
+    [2] (webpack)/buildin/global.js 472 bytes {0} [built]
+    [3] (webpack)/buildin/module.js 497 bytes {0} [built]
+        + 1 hidden module
+events.js:183
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE :::4000
+    at Object._errnoException (util.js:992:11)
+    at _exceptionWithHostPort (util.js:1014:20)
+    at Server.setupListenHandle [as _listen2] (net.js:1355:14)
+    at listenInCluster (net.js:1396:12)
+    at Server.listen (net.js:1480:7)
+    at Function.listen (/home/chatbot/botPackage/FM-Widget/node_modules/express/lib/application.js:618:24)
+    at Object.<anonymous> (/home/chatbot/botPackage/FM-Widget/server.js:83:5)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! FreddieMac@1.0.1 start: `webpack --mode production && node server.js`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the FreddieMac@1.0.1 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /home/chatbot/.npm/_logs/2019-04-03T10_34_47_748Z-debug.log

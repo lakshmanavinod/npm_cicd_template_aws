@@ -1,0 +1,37 @@
+.form {
+padding: 15px 30px;
+background-color: #fff;
+border-radius: 10px;
+margin-bottom: 30px;
+}
+.button {
+    padding: 6px;
+    background: #00a6e2;
+    color: #fff;
+    border: 1px solid transparent;
+    min-width: 100px;
+    text-align: center;
+    border-radius: 6px;
+    display: table;
+    text-decoration: none;  
+    font-weight: 700;
+    font-size: 14px;
+    margin: 0 auto;
+}
+.button:hover {
+    background: #fff;
+    color: #00a6e2;
+    border: 1px solid #00a6e2;
+
+}
+.form-fields .form-group {
+    margin-bottom: 5px;
+}
+.form-fields .form-group input[type="checkbox"], .form-fields .form-group input[type="radio"]  {
+    margin-bottom: 5px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.form-fields .form-group label, .form-fields label {
+    color: #163666;
+}

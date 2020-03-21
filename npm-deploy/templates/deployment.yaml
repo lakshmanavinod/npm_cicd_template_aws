@@ -1,0 +1,18 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+    name: {{ .Values.app_name }}
+    namespace: {{ .Values.namespace }}
+spec:
+    replicas: {{ .Values.replicas }}
+    template:
+        metadata:
+            labels:
+                app: {{ .Values.app_name }}_npm
+        spec:
+            containers:
+            - name: {{ .Values.app_name }}
+              image: {{ .Values.app_image }}
+              ports:
+              - name: http-port
+                containerPort: 8080

@@ -1,0 +1,11 @@
+version : '2'
+
+services :
+
+  bot-test:
+    container_name  : bot-widget-1
+    build: .
+    ports :
+      - 4000:4000    
+    environment:
+      CHANNEL_MANAGER: localhost:3030  

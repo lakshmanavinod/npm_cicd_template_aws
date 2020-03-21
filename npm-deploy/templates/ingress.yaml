@@ -1,0 +1,16 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: {{ .Values.app_name }}
+  namespace: {{ .Values.namespace }}
+  annotations: 
+    kubernetes.io/ingress.class: nginx
+spec:
+  rules:
+  - host: cicd.{{ .Values.hostname }}.techforce.ai
+    http:
+      paths:
+      - backend:
+          serviceName: {{ .Values.app_name }}-srv
+          servicePort: 80
+        path: /
