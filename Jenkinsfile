@@ -12,6 +12,7 @@ def replaceAppHelmDeploy(String app_name,String app_ver){
 }
 
 def deployHelmChart(String app_name){
+sh "aws eks --region $AWS_DEFAULT_REGION update-kubeconfig --name $AWS_EKS_CLUSTER_NAME"        
 sh "helm upgrade --install ${app_name} npm-deploy"
 }
 
@@ -29,20 +30,20 @@ pipeline {
         def pkg = readJSON file: 'package.json'
         app_name = pkg.name.toString().toLowerCase()
         app_ver  = pkg.version             
-        sh "sudo docker build -t $DOCKER_SERVER/$app_name:$app_ver ."
+        sh "sudo docker build -t $DOCKER_AWS_SERVER/$app_name:$app_ver ."
               }
       }
     }
     stage('Push Image') {
       steps {
-        sh "sudo docker login $DOCKER_SERVER -u=$DOCKER_USERNAME -p=$DOCKER_PASSWORD"
-        sh "sudo docker push $DOCKER_SERVER/$app_name:$app_ver"
+        sh "sudo aws ecr get-login-password --region $AWS_DEFAULT_REGION | docker login --username AWS --password-stdin $DOCKER_AWS_SERVER"
+        sh "sudo docker push $DOCKER_AWS_SERVER/$app_name:$app_ver"
       }
     }
     stage('Deploy') {
       steps {
         // Replace the values in the values.yaml   
-        connectGke()      
+        connectAws()      
         replaceAppHelmDeploy("$app_name","$app_ver")
         deployHelmChart("$app_name")
         
@@ -50,8 +51,10 @@ pipeline {
     }
   }
   environment {
-    DOCKER_SERVER = credentials('DOCKER_SERVER')
-    DOCKER_USERNAME = credentials('DOCKER_USERNAME')
-    DOCKER_PASSWORD = credentials('DOCKER_PASSWORD')
+    DOCKER_AWS_SERVER = credentials('DOCKER_AWS_SERVER')
+    AWS_EKSCICD_KEY_ID = credentials('AWS_EKSCICD_KEY_ID')
+    AWS_EKSCICD_SECRET_KEY = credentials('AWS_EKSCICD_SECRET_KEY')
+    AWS_DEFAULT_REGION= 'us-east-2'
+    AWS_EKS_CLUSTER_NAME= 'vinodtest'      
   }
 }
