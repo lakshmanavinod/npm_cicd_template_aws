@@ -3,9 +3,12 @@ kind: Service
 metadata:
     name: {{ .Values.app_name }}-srv
     namespace: {{ .Values.namespace }}
+    annotations:
+      alb.ingress.kubernetes.io/target-type: ip
 spec:
     selector:
         app: {{ .Values.app_name }}_npm
+    type: LoadBalancer    
     ports:
     - name: http
       port: 80
