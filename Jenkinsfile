@@ -12,7 +12,7 @@ def replaceAppHelmDeploy(String app_name,String app_ver){
 }
 
 def deployHelmChart(String app_name){   
-sh "helm upgrade --install ${app_name} npm-deploy"
+sh "helm upgrade --install ${app_name} npm-deploy --namespace cicd"
 }
 
 def connectAws(){
@@ -35,7 +35,11 @@ pipeline {
     }
     stage('Push Image') {
       steps {
-              sh "sudo aws ecr get-login-password --region ${AWS_DEFAULT_REGION} | docker login --username AWS --password-stdin ${DOCKER_AWS_SERVER}"
+              // Login to AWS ECR Registry
+              sh "aws ecr get-login-password --region ${AWS_DEFAULT_REGION} | sudo docker login --username AWS --password-stdin ${DOCKER_AWS_SERVER}"
+              // Create a new repository for each application , if it doesn't exist
+              sh "aws ecr describe-repositories --repository-names ${app_name} || aws ecr create-repository --repository-name ${app_name}"
+              // Push the image to AWS ECR
               sh "sudo docker push ${DOCKER_AWS_SERVER}/$app_name:$app_ver"
       }
     }
@@ -51,8 +55,8 @@ pipeline {
   }
   environment {
     DOCKER_AWS_SERVER = credentials('DOCKER_AWS_SERVER')
-    AWS_EKSCICD_KEY_ID = credentials('AWS_EKSCICD_KEY_ID')
-    AWS_EKSCICD_SECRET_KEY = credentials('AWS_EKSCICD_SECRET_KEY')
+    AWS_ACCESS_KEY_ID = credentials('AWS_EKSCICD_KEY_ID')
+    AWS_SECRET_ACCESS_KEY = credentials('AWS_EKSCICD_SECRET_KEY')
     AWS_DEFAULT_REGION= 'us-east-2'
     AWS_EKS_CLUSTER_NAME= 'vinodtest'      
   }
